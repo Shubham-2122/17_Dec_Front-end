@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- pattern = "[A-za-z]{3,8}" -->
+
+    <!-- struct -->
+    <table align="center">
+        <form action="">
+            <tr>
+                <td>Enter your name</td>
+                <!-- <td><input type="text" placeholder="Enter your name" pattern="[A-Za-z]+" required></td> -->
+                 <td><input type="text" placeholder="Enter your name" pattern="[A-Za-z]{3,8}" required></td>
+            </tr>
+            <tr>
+                <td>Enter your Surname</td>
+                <td><input type="text" placeholder="Enter your Surname" pattern="[A-Za-z]{3,8}" required></td>
+            </tr>
+              <tr>
+                <!-- 7,9,8,6 -->
+                <td>Enter your Phone</td>
+                <td><input type="tel" maxlength="10" placeholder="Enter your Phone" pattern="[6-9][0-9]{9}" required></td>
+            </tr>
+            <tr>
+                <!-- shubhamjadav5@gmail.com
+                    [a-z0-9]+'@'+[a-z]+'.'+[a-z]{2,3}$
+                -->
+                <td>Enter your Email</td>
+                <td><input type="email" placeholder="Enter your Email" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="x" id=""> Male 
+                    <input type="radio" name="x"> Female 
+                    <input type="radio" name="x"> others
+                </td>
+            </tr>
+             <tr>
+                <td>Enter your password</td>
+                <td><input type="password" part="[A-Z][A-Za-b0-9]{6,10}" placeholder="Enter your password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
