@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: red;
+        }
+        .main::first-line{
+            background-color: aqua;
+        }
+        .main::selection{
+            background-color: lightcoral;
+            color: white;
+        }
+        ul li::before{
+            content: "s";
+            height: 100px;
+        }
+        ul li::after{
+            content: "y";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores tempora culpa nemo id ut natus recusandae.
+        Nihil pariatur vitae animi laudantium optio magni, distinctio non molestias alias iste nobis neque. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quo iste delectus nobis veritatis rerum quibusdam architecto
+        nostrum, quam non esse ullam, nulla consequuntur sequi. Nisi fuga et voluptate praesentium nam. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Voluptate, maxime sed! Distinctio enim quae repellat, fugiat nobis
+        officia deserunt consectetur optio iure, expedita reiciendis, tempore voluptas quidem quos numquam rem.
+    </div>
+</body>
+
+</html>
