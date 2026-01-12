@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+
+        .right {
+            height: 200px;
+            width: 200px;
+            background: rgba(0, 0, 0, .4);
+            transform: translate(100%, -100%);
+            transition: .6s;
+        }
+
+        .box:hover .right {
+            transform: translate(0px, 0px);
+        }
+
+        .left {
+            height: 200px;
+            width: 200px;
+            background: rgba(0, 0, 0, .4);
+            transform: translate(-100%,0px);
+             transition: .6s;
+        }
+        .box:hover .left{
+            transform: translate(0px,-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="right">right</div>
+        <div class="left">left</div>
+    </div>
+</body>
+
+</html>
